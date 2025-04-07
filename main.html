@@ -11,8 +11,8 @@
     <h1>📋 My Task Tracker</h1>
     <div class="filters">
       <button onclick="filterTasks('all')">All</button>
-      <button onclick="filterTasks('today')">Today</button>
-      <button onclick="filterTasks('upcoming')">Upcoming</button>
+      <button onclick="filterTasks('today')">active</button>
+      <button onclick="filterTasks('upcoming')">completed</button>
     </div>
 
     <div class="search-bar">
@@ -29,9 +29,15 @@
     </div>
 
     <ul id="taskList"></ul>
+    <div class="filters">
+      <span id="totalTasks">Total Tasks: 0</span>
+      <span id="completedTasks">Completed: 0</span>
+      <button id="clearCompleted">Clear Completed</button>
+  </div>
   </div>
   
   
+</div>
 
   <script src="script.js"></script>
 </body>
